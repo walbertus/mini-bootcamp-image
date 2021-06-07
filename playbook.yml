@@ -1,0 +1,12 @@
+- hosts: default
+  become: true
+  remote_user: vagrant
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  roles:
+    - {
+      role: rvm.ruby,
+      tags: ruby,
+      rvm1_rubies: ['ruby-2.6.3'],
+      rvm1_user: 'vagrant'
+      }

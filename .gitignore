@@ -118,3 +118,5 @@ modules.xml
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/vagrant,visualstudiocode,intellij+all,ansible
+
+roles

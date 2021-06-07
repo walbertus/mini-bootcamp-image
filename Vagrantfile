@@ -9,4 +9,10 @@ Vagrant.configure('2') do |config|
   end
 
   config.vm.synced_folder '.', '/vagrant', type: 'virtualbox'
+
+  config.vm.provision 'ansible_local', run: 'always' do |ansible|
+    ansible.playbook = "playbook.yml"
+    ansible.galaxy_role_file = 'requirements.yml'
+    ansible.galaxy_command = 'ansible-galaxy install --role-file=%{role_file} --roles-path=%{roles_path}'
+  end
 end
