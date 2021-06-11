@@ -14,7 +14,7 @@ This repository will create Vagrant box for mini bootcamp purpose
  1. File in this repository will be in sync with `/vagrant` in the VM
 
 ## Vagrant Commands
- - Start VM: vagrant up
- - Hibernate VM: vagrant suspend
- - Restart VM: vagrant reload
- - Destroy VM: vagrant destroy
+ - Start VM: `vagrant up`
+ - Hibernate VM: `vagrant suspend`
+ - Restart VM: `vagrant reload`
+ - Destroy VM: `vagrant destroy`
